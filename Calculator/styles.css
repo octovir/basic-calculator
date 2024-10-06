@@ -1,0 +1,98 @@
+header{
+    background-color: #02d767;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#calculator{
+    background-color: #404041;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: whitesmoke;
+    color: #404041;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    color: whitesmoke;
+    background-color: #707072;
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #959599;
+}
+
+button:active{
+    background-color: #96a19c;
+}
+
+.oper-btn{
+    background-color: #02d767;
+}
+
+.oper-btn:hover{
+    background-color: #58d492;
+}
+
+.oper-btn:active{
+    background-color: #7bcaa0;
+}
+
+.cal-btn{
+    background-color: #02d767;
+}
+
+.cal-btn:hover{
+    background-color: #58d492;
+}
+
+.cal-btn:active{
+    background-color: #7bcaa0;
+}
+
+.clear-btn:hover{
+    background-color: #ffcc5d;
+}
+
+.clear-btn:active{
+    background-color: #ffdb8f;
+}
