@@ -6,13 +6,19 @@ header{
     margin-top: 25px;
     margin-bottom: 25px;
     max-width: 500px;
-    border-radius: 5px;
+    border-radius: 15px;
     color: white;
-    
+    font-weight: 800;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+header:hover{
+    background-color: #fdc54a;
 }
 
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(204, 204, 204);
+    font-family:sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -21,78 +27,102 @@ body{
     flex-direction: column;
 }
 
-#calculator{
-    background-color: #404041;
-    max-width: 500px;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-#display{
+.calculator{
+    position: relative;
+    background-color: whitesmoke;
+    max-width: 400px;
     width: 100%;
     padding: 20px;
-    font-size: 5rem;
-    text-align: left;
+    border-radius: 35px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.075);
+}
+
+.display{
+    height: 100px;
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: right;
+    margin-bottom: 25px;
+    outline: none;
     border: none;
     background-color: whitesmoke;
-    color: #404041;
+    color:#505050;
+    border-radius: 25px;
+    /*box-shadow: 0 5px 10px rgba(0,0,0,0.05) inset;*/
 }
 
-#keys{
+.buttons{
+    background-color: #ececec;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 25px;
+    grid-gap: 15px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05) inset;
 }
 
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+.buttons button{
+    padding: 20px 10px;
+    border-radius: 15px;
     border: none;
-    color: whitesmoke;
-    background-color: #707072;
-    font-size: 3rem;
-    font-weight: 700;
+    color: rgb(105, 105, 105); 
+    background-color: whitesmoke;
+    font-size: 24px;
+    font-weight:bold;
     cursor: pointer;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
 }
 
-button:hover{
-    background-color: #959599;
+
+
+.buttons button:hover{
+    background-color: #d8d8d8;
 }
 
-button:active{
-    background-color: #96a19c;
+.buttons button:active{
+    background-color: #cacaca;
 }
 
-.oper-btn{
+.buttons .oper-btn{
     background-color: #02d767;
+    color: whitesmoke;
+
 }
 
-.oper-btn:hover{
-    background-color: #58d492;
+.buttons .oper-btn:hover{
+    background-color: #98dab7;
 }
 
-.oper-btn:active{
-    background-color: #7bcaa0;
+.buttons .oper-btn:active{
+    background-color: #c2dfd0;
+    color:#02d767;
 }
 
-.cal-btn{
+.buttons .cal-btn{
     background-color: #02d767;
+    color: whitesmoke;
+
 }
 
-.cal-btn:hover{
-    background-color: #58d492;
+.buttons .cal-btn:hover{
+    background-color: #91d6b1;
 }
 
-.cal-btn:active{
-    background-color: #7bcaa0;
+.buttons .cal-btn:active{
+    background-color: #c2dfd0;
+    color:#02d767;
 }
 
-.clear-btn:hover{
-    background-color: #ffcc5d;
+.buttons .ers-btn{
+    background-color: #fdc54a;
+    color: whitesmoke;
 }
 
-.clear-btn:active{
-    background-color: #ffdb8f;
+.buttons .ers-btn:hover{
+    background-color: #ffd883;
+}
+
+.buttons .ers-btn:active{
+    background-color: #faedd1;
+    color: #fdc54a;
 }

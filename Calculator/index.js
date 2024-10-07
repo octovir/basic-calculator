@@ -1,20 +1,23 @@
 //calculator program ;3
+const display = document.querySelector(".display");
+const buttons = document.querySelectorAll("button");
+const specicalChars= ["%","*","/","-","+","="];
+let output= "";
 
-const display = document.getElementById("display");
-
-function appendToDisplay(input){
-    display.value += input;
-}
-
-function clearDisplay(){
-    display.value= "";
-}
-
-function calculator(){
-    try{
-        display.value= eval(display.value);
+const calculate = (btnValue) => {
+    if (btnValue === "=" && btnValue !== ""){
+        output = eval(output.replace("%","/100"))
+    } else if (btnValue === "AC"){
+        output = "";
+    } else if (btnValue === "DEL"){
+        output = output.toString().slice(0,-1);
+    } else{
+        if (output === "" && specicalChars.includes(btnValue)) return;
+        output += btnValue;
     }
-    catch(error){
-        display.value= "error"
-    }
-}
+    display.value= output;
+};
+ 
+buttons.forEach(button=>{
+    button.addEventListener("click", (a)=> calculate(a.target.dataset.value));
+});

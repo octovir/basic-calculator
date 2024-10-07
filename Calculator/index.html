@@ -8,31 +8,41 @@
 </head>
 <body>
     <header>
-        This is my calculator !!!
+        My calculator
     </header>
-    <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('/')" class="oper-btn">/</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')" class="oper-btn">x</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('-')" class="oper-btn">-</button>
-            <button onclick="clearDisplay()" class="clear-btn">c</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('+')" class="oper-btn">+</button>
-            <button onclick="calculator()" class="cal-btn">=</button>
+    <div class="calculator" >
+        <input class="display" readonly>
+        <div class="buttons">
+            <button data-value="AC" class="ers-btn">AC</button>
+            <button data-value="DEL" class="ers-btn">DEL</button>
+            <button data-value="%" class="oper-btn">%</button>
+            <button data-value="/" class="oper-btn">/</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8"">8</button>
+            <button data-value="9"">9</button>
+            <button data-value="*" class="oper-btn">x</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="-" class="oper-btn">-</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="+" class="oper-btn">+</button>
+
+            <button data-value="00">00</button>
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-value="=" class="cal-btn">=</button>
+
+
+            
         </div>
     </div>
-
+    
     <script src="index.js"></script>
 </body>
 </html>
